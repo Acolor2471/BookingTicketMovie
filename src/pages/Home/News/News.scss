@@ -1,0 +1,71 @@
+.itemLeft {
+    position: relative;
+    .topItemLeft {
+        .poster {
+            width: 161px;
+            height: 217px;
+            background-image: url("./../../../assets/img/am-anh-kinh-hoang-3-the-conjuring-3-c18-15742352934530_215x318.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 0 79px;
+            cursor: pointer;
+        }
+    }
+    .bottomItemLeft {
+        .poster {
+            width: 161px;
+            height: 217px;
+            background-image: url("./../../../assets/img/ban-tay-diet-quy-evil-expeller-c16-16167437811994_215x318.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 0 79px;
+            cursor: pointer;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 0px;
+        left: 427px;
+        top: 251px;
+        border: 1px solid #00000017;
+        transform: rotate(90deg);
+    }
+}
+
+.itemRight {
+    margin-left: 55px;
+    .topItemRight {
+        .poster {
+            width: 161px;
+            height: 217px;
+            background-image: url("./../../../assets/img/chu-ngua-bat-kham-spirit-p-16171851912283_215x318.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 0 79px;
+            cursor: pointer;
+        }
+    }
+    .bottomItemRight {
+        .poster {
+            width: 161px;
+            height: 217px;
+            background-image: url("./../../../assets/img/cruella-16182123467884_215x318.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 0 79px;
+            cursor: pointer;
+        }
+    }
+}
+
+.newsCss {
+    display: block !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .newsCss {
+        display: none !important;
+    }
+}

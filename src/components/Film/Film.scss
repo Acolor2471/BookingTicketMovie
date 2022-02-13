@@ -1,0 +1,252 @@
+// .slick-slide .imgCard  img {
+//     display: block;
+//     height: 200px !important;
+//     width: 200px;
+// }
+.main {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    height: 375px;
+    width: 255px;
+    background: white;
+    // box-shadow: 0px 20px 100px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 15px 4px rgb(0 0 0 / 34%);
+}
+
+.backimg {
+    height: 375px;
+    width: 255px;
+    // margin-left: 10px;
+    // margin-top: 10px;
+    padding-top: 0px !important;
+    position: relative;
+}
+
+.movie-cover {
+    position: absolute;
+    margin-left: 20px;
+    height: 130px;
+    margin-top: -70px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.fa-play {
+    margin: 85px 85px !important;
+    font-size: 4rem;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    color: white;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.fa-play:hover {
+    transform: scale(0.9);
+    color: red;
+}
+
+.item_Img {
+    position: relative;
+}
+
+.imgCard:hover .fa-play {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.imgCard:hover .title {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.title {
+    position: absolute;
+    background: white;
+    width: 255px;
+    margin-top: -135px;
+    // bottom: 6px;
+    height: 135px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.title p {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 6px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.title .danhGia {
+    opacity: 0;
+}
+
+.head1 {
+    display: flex;
+    height: 20px;
+    width: 255px;
+    margin-top: 30px;
+    // margin-left: 21px;
+}
+
+.head1 .rate {
+    margin-left: 10.5rem;
+}
+
+.head1 p {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.head2 {
+    display: flex;
+    height: 30px;
+    width: 255px;
+    margin-top: 0px;
+    // margin-left: 21px;
+}
+
+.head2 .rate {
+    margin-left: 10.5rem;
+}
+
+.head2 p {
+    color: rgba(0, 0, 0, 1);
+    font-family: sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.head3 {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // max-width: 165px;
+    width: 100%;
+    // margin: 6px auto;
+}
+
+.head3 .btn {
+    margin: 10px;
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    border-radius: 0;
+}
+
+.head3 .btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    // background: red;
+    border: none;
+}
+
+// Mobile
+@media (max-width: 500px) {
+    .main {
+        margin-top: 20px !important;
+        height: 250px !important;
+        width: 170px !important;
+    }
+    .backimg {
+        height: 250px !important;
+        width: 170px !important;
+    }
+    .head1 {
+        display: none !important;
+    }
+    .head2 {
+        display: none !important;
+    }
+    .head3 .btn {
+        font-size: 12px;
+        width: 78px;
+        height: 26px;
+        margin-top: 50px;
+    }
+    .fa-play {
+        margin-left: 97px !important;
+    }
+    .title {
+        opacity: 1;
+        width: 170px;
+        height: 80px;
+        display: flex;
+        margin-top: -80px;
+        justify-content: center;
+        align-items: center;
+    }
+    .title .danhGia {
+        opacity: 0.9;
+        font-size: 10px;
+        margin-top: 0px;
+    }
+    .fa-play {
+        opacity: 0.8;
+        font-size: 46px;
+        margin: 48px !important;
+    }
+    .title p {
+        margin-left: 0px !important;
+        margin-top: -30px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main {
+        margin-top: 20px !important;
+        height: 250px !important;
+        width: 170px !important;
+    }
+    .backimg {
+        height: 250px !important;
+        width: 170px !important;
+    }
+    .head1 {
+        display: none !important;
+    }
+    .head2 {
+        display: none !important;
+    }
+    .head3 .btn {
+        font-size: 12px;
+        width: 78px;
+        height: 26px;
+        margin-top: 50px;
+    }
+    .fa-play {
+        margin-left: 97px !important;
+    }
+    .title {
+        opacity: 1;
+        width: 170px;
+        height: 80px;
+        display: flex;
+        margin-top: -80px;
+        justify-content: center;
+        align-items: center;
+    }
+    .title .danhGia {
+        opacity: 0.9;
+        font-size: 10px;
+        margin-top: 0px;
+    }
+    .fa-play {
+        opacity: 0.8;
+        font-size: 46px;
+        margin: 48px !important;
+    }
+    .title p {
+        margin-left: 0px !important;
+        margin-top: -30px;
+        font-size: 12px;
+    }
+}
